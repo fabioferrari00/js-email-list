@@ -6,6 +6,6 @@ const email = `https://flynn.boolean.careers/exercises/api/random/mail`;
 for (let i = 0; i < 10; i++) {
   //effettuo la chiamata ajax
   axios.get(email).then((resp) => {
-    emailList.innerHTML += `<li>${resp.data.response}</li>`
+    emailList.innerHTML += `<li class="list-unstyled">${resp.data.response}</li>`
   });
 };
